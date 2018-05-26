@@ -31,7 +31,7 @@ const formatDate = (date) => {
     return moment(date).format("dddd, MMMM Do YYYY, h:mm:ss a");
 }
 
-const renderAdIfNeeded = (index) => index > 0 && index % 10 === 0 ?
+const renderAdIfNeeded = (index) => index > 0 && index % 20 === 0 ?
     <tr><td colSpan="5" className="text-center"><Ad /></td></tr> :
     null;
 

@@ -101,19 +101,19 @@ export function prefetchProducts() {
 };
 
 
-export function generateRandomAdNum(prevNum) {
+export function generateRandomAdNum(randomNum) {
     return function (dispatch) {
         dispatch(
             {
                 type: AD_RANDOM_NUM,
-                meta: prevNum
+                meta: randomNum
             }
         );
     };
 }
 
 const setUrl = (pageNum, sortCol) => {
-    let url = `${ROOT_URL}?_page=${pageNum}&_limit=20`;
+    let url = `${ROOT_URL}?_page=${pageNum}&_limit=15`;
     if (sortCol) {
         url += `&_sort=${sortCol}`;
     }

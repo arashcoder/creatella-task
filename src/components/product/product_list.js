@@ -63,7 +63,6 @@ class ProductList extends Component {
     }
 
     render() {
-        let fontStyl = this.props.sortCol
         return (
             <Fragment>
                 <table className="table table-striped">

@@ -11,7 +11,7 @@ import { generateRandomAdNum } from '../../actions/product';
         }
    }
 
-    componentDidMount = () => {
+   getInitialState = () => {
         let random = Math.floor(Math.random() * 1000);
         while (random === this.props.adNum) {
             random = Math.floor(Math.random() * 1000);
